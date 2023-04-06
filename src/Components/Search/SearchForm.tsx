@@ -1,8 +1,11 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { getHero } from "../../API/api";
+
 import SearchInput from "./SearchInput";
 import SearchButton from "./SearchButton";
-import { getHero } from "../../API/api";
 const SearchForm = function () {
+  const navigate = useNavigate();
   const [errState, setErrState] = useState<boolean>(false);
   const [searchTerm, setSearchTerm] = useState<null | string>(null);
 
@@ -12,8 +15,8 @@ const SearchForm = function () {
       setErrState(true);
       return;
     }
-    getHero(searchTerm).then((results) => {
-      console.log(results);
+    navigate(`/MarvelHeros/heros/?heroName=${searchTerm}`, {
+      replace: true,
     });
   };
 

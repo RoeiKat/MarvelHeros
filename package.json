@@ -1,5 +1,5 @@
 {
-  "homepage": "http://roeikat.github.io/MarvelHeros",
+  "homepage": "http://roeikat.github.io/MarvelHeros/",
   "name": "marvel",
   "version": "0.1.0",
   "private": true,
@@ -14,8 +14,10 @@
     "@types/node": "^16.18.23",
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
+    "bootstrap": "^5.2.3",
     "crypto-js": "^4.1.1",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",

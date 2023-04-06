@@ -1,18 +1,22 @@
-import { useEffect } from "react";
-import { getHero } from "./API/api";
-import SearchForm from "./Components/Search/SearchForm";
+import { Fragment } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
 
-getHero("hulk");
+import CustomNavbar from "./Components/UI/Navbar";
+import MainPage from "./Pages/MainPage";
+import SearchResultsPage from "./Pages/SearchResultsPage";
 
-const baseURL = "https://gateway.marvel.com/";
 function App() {
   return (
-    <div className="container">
-      <div>
-        <h1 className="text-center">Welcome to Marvel Heros,</h1>
-        <SearchForm />
+    <Fragment>
+      <CustomNavbar />
+      <div className="container">
+        <Routes>
+          <Route path="/MarvelHeros/" element={<MainPage />} />
+          <Route path="/MarvelHeros/heros/*" element={<SearchResultsPage />} />
+          <Route path="*" element={<Navigate to={"/MarvelHeros/"} />} />
+        </Routes>
       </div>
-    </div>
+    </Fragment>
   );
 }
 
