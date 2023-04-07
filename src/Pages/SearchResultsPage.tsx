@@ -30,6 +30,7 @@ const SearchResultsPage = function () {
     getHero(heroName)
       .then((results) => {
         const heros: Hero[] = results.data.results;
+        console.log(heros);
         setSearchResults(heros);
         setLoading(false);
       })
