@@ -11,8 +11,8 @@ The project is up and running in: https://roeikat.github.io/MarvelHeros/.
 
 Have fun! 
 
-## Technologies Used: 
+## Used in this project: 
 React,
 Typescript,
-React-router,
+React-router v6,
 Bootstrap.
