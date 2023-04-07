@@ -6,8 +6,8 @@ import { Hero } from "../interfaces/hero.interface";
 
 import SearchForm from "../Components/Search/SearchForm";
 import Spinner from "../Components/UI/Spinner";
-import HeroCard from "../Components/UI/HeroCard";
-import HeroModal from "../Components/UI/HeroModal";
+import HeroCard from "../Components/Heros/HeroCard";
+import HeroModal from "../Components/Heros/HeroModal";
 
 const SearchResultsPage = function () {
   const [searchParams] = useSearchParams();
@@ -30,7 +30,6 @@ const SearchResultsPage = function () {
     getHero(heroName)
       .then((results) => {
         const heros: Hero[] = results.data.results;
-        console.log(heros);
         setSearchResults(heros);
         setLoading(false);
       })

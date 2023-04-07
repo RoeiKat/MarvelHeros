@@ -11,7 +11,7 @@ const MainPage = function () {
       <img
         src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/d8d80a51766659.58f8feb30d642.jpg"
         alt="All marvel series"
-        style={{ width: "50rem", height: "30rem" }}
+        style={{ width: "50%" }}
       />
     </div>
   );
