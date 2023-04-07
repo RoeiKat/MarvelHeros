@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/MarvelHeros/static/js/main.9b656a1f.js",
+    "index.html": "/MarvelHeros/index.html",
+    "main.9b656a1f.js.map": "/MarvelHeros/static/js/main.9b656a1f.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.9b656a1f.js"
+  ]
+}
